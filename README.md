@@ -1,19 +1,6 @@
-# Vesta
+# Canary
 
-Our mission: check every property in the world for accessibility. You can help us. 
+We want to help build a world where all workers feel and are safe; a world where all sexual harassment is reported and the number of incidents is in decline, where harmful cultural norms are addressed through constructive conversation and improved behavior, where larger incidents lead to justice. In our vision of the world, toxic masculinity is in decline, and people are empowered to learn from each other and grow together. At Canary, we believe that such a world is achievable. Let’s work together to be better. 
 
-A Zinc project by Sara, Alexandra, Zan, and Anthony.
-
-## About
-
-1.8 million disabled people in the UK struggle to find accessible housing. A very small percentage of houses in the UK are listed as accessible. Vesta is here to help.
-
-The Vesta app enables anyone with a smartphone to easily survey the accessibility of their property. 
-
-## Code Credits
-
-Webpage template courtesey of Start Bootstrap. It is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+We're a team in the [Zinc VC](https://www.zinc.vc/) incubator.
 
