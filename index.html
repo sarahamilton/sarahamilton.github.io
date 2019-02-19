@@ -148,7 +148,7 @@
 </div>
 
 <!-- Form -->
-<div id="content">
+<div id="report-val">
   <h1>Here's the actual form (or chatbot)</h1>
   <form>
       <div class="form-group">
@@ -220,10 +220,10 @@ function download(filename, text) {
 }
 
 // Start file download.
-document.getElementById("dwn-btn").addEventListener("click", function(){
+  document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = document.getElementById("text-val").value;
-    var filename = "hello.txt";
+    var text = document.getElementById("report-val").value;
+    var filename = "report.txt";
     
     download(filename, text);
 }, false);
