@@ -196,7 +196,8 @@
 <script>
   var doc = new jsPDF()
 
-  doc.text('Hello world!', 10, 10)
+  var text = document.getElementById("report-val").value;
+  doc.text(text, 10, 10)
   doc.save('your-report.pdf')
 
 </script>
