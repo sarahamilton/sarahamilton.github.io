@@ -251,11 +251,11 @@
 
 <!-- Form -->
 <div id="report-val">
-  <h1>Here's the actual form (or chatbot)</h1>
+  <h1>Report Creator</h1>
   <form>
       <div class="form-group">
           <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+          <textarea class="form-control" id="report-val" rows="1"></textarea>
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">When did the incident occur?</label>
@@ -290,21 +290,11 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">I certify that all declarations are truthful</label>
             </div>    
-      <button id="cmd" type="submit" class="btn btn-primary" id="dwn-btn">Generate PDF</button>
+      <button type="submit" class="btn btn-primary" id="dwn-btn">Generate PDF</button>
     </form>
 </div>
 
-  <!-- JavaScript to download--> 
-<script>
-  var doc = new jsPDF()
-
-  var text = document.getElementById("report-val").value;
-  doc.text(text, 10, 10)
-  doc.save('your-report.pdf')
-
-</script>
-
-<!-- TESTING-->
+<!-- TESTING Javascript-->
 <textarea id="text-val" rows="4">This is the content of my file</textarea><br/>
 <input type="button" id="dwn-btn" value="Download dynamically generated text file"/>
 
