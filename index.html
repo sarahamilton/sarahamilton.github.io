@@ -290,8 +290,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">I certify that all declarations are truthful</label>
             </div>    
-      <button type="submit" class="btn btn-primary" id="dwn-btn">Generate PDF</button>
-      <input type="button" id="dwn-btn" value="Download file"/>
+      <button type="submit" class="btn btn-primary" id="dwn-btn">Download File</button>
     </form>
 </div>
 
@@ -314,7 +313,7 @@ function download(filename, text) {
   document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
     var text = document.getElementById("report-val").value;
-    var filename = "report.txt";
+    var filename = "report.txt";§
     
     download(filename, text);
 }, false);
