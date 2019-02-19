@@ -121,7 +121,7 @@ header.masthead h1 {
   opacity: 0.3;
 }
 
-.test-section {
+section.test-section {
     position: relative;
     padding: 250px 0;
     background-color: #384e77ff;
