@@ -42,7 +42,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5">Welcome to CanaryHelp.</h1>
+        <h1 class="mb-5">Welcome to Canary.</h1>
       </div>
     </div>
   </div>
@@ -259,7 +259,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">When did the incident occur?</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            <textarea class="form-control" id="report-val" rows="1"></textarea>
           </div>
           <div class="form-group">
               <label for="exampleFormControlTextarea1">Please describe the incident that occurred, in as much detail as possible.</label>
@@ -312,6 +312,7 @@ function download(filename, text) {
 // Start file download.
   document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
+
     var text = document.getElementById("report-val").value;
     var filename = "report.txt";§
     
