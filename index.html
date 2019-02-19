@@ -130,6 +130,20 @@
         </div>
       </div>
     </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Where can I go for further help?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+              The <a href="http://thesurvivorstrust.org/">Survivor's Trust</a> or <a href="https://www.hestia.org/">Hestia</a>" are great resources for counseling. <a href=">https://www.citizensadvice.org.uk/">Citizens Advice</a>" or <a href="http://www.acas.org.uk/index.aspx?articleid=6078">Acas</a> can help with questions about your rights.  
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -178,13 +192,45 @@
     </form>
 </div>
 
-  <!-- Preview -->
+  <!-- JavaScript to download--> 
+<script>
+  var doc = new jsPDF()
 
-  <!-- Download-->
-  <form method="get" action="file.doc">
-    <button type="submit">Download!</button>
-  </form>
- 
+  doc.text('Hello world!', 10, 10)
+  doc.save('your-report.pdf')
+
+</script>
+
+<!-- TESTING-->
+<textarea id="text-val" rows="4">This is the content of my file</textarea><br/>
+<input type="button" id="dwn-btn" value="Download dinamically generated text file"/>
+
+<script>
+function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+// Start file download.
+document.getElementById("dwn-btn").addEventListener("click", function(){
+    // Generate download of hello.txt file with some content
+    var text = document.getElementById("text-val").value;
+    var filename = "hello.txt";
+    
+    download(filename, text);
+}, false);
+</script>
+
+  <!-- Preview - TBD -->
+
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
