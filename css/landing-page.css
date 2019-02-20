@@ -5,23 +5,22 @@
  */
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Montserrat, 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+canary,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Montserrat, 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-color: #384E77;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -29,7 +28,7 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #384E77;
   height: 100%;
   width: 100%;
   top: 0;
@@ -105,7 +104,6 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -113,7 +111,7 @@ header.masthead h1 {
 
 .call-to-action .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #384E77;
   height: 100%;
   width: 100%;
   top: 0;
@@ -124,7 +122,7 @@ header.masthead h1 {
 section.test-section {
     position: relative;
     padding: 250px 0;
-    background-color: #384e77ff;
+    background-color: #384e77;
     background-position: center;
     background-size: cover;
 }
