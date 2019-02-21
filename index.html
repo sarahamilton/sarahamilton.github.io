@@ -28,21 +28,25 @@
 
 <body>
 
-  <!-- Navigation
-  <nav class="navbar navbar-light bg-light static-top">
+  <!-- Navigation  -->
+  <nav class="navbar static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">CANARY</a>
-      <a class="btn btn-primary" href="#">Sign Up</a>
+      <canary class="navbar-brand" href="#">CANARY</canary>
+      <canary class="navbar-brand" href="#">About</canary>
+        <canary class="navbar-brand" href="#">How To</canary>
+        <canary class="navbar-brand" href="#">FAQ</canary>
+        <canary class="navbar-brand" href="#">Report</canary>
+      <canary class="navbar-brand" href="#">Report</canary>
     </div>
-  </nav> -->
+  </nav>
 
  <!-- Masthead -->
- <header class="masthead text-white text-center">
+ <header class="masthead text-center">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Welcome to <canary> CANARY </canary></h1>
+          <h1>Welcome to <canary> CANARY </canary></h1>
       </div>
     </div>
   </div>
@@ -53,17 +57,19 @@
 <section class="test-section">
 <div>
 <br>
-  <h1>About</h1>
+    <center>
+    <h1 class= "ml-"> About</h1>
+    </center>
   <p>We’re a technology company called Canary. We’re dedicated to preventing workplace harassment and building a safer world for us all.
-    <br><br>
+    <br>
       Filing a claim of sexual harassment can be overwhelming. What should you say? Who should you tell? We are here to help! 
-      <br>This tool will help you write down your experiences, and help you understand your options. It is completely anonymous, and we never save any of your information.
-</p>
+      <br>
+      This tool will help you write down your experiences, and help you understand your options. It is completely anonymous, and we never save any of your information.</p><br>
   <h4>Here's what we can help with:</h4>
   <ul>Creating clear, timestamped documentation of an experience that you had</ul>
   <ul>Providing a safe space for you to reflect on your experience</ul>
   <ul>Describing some of the processes that you may deal with</ul>
-  
+  <br>
   <h4>Here's what we can't help with:</h4>
   <ul>Giving legal advice</ul>
   <ul>Escalating issues to your company</ul>
@@ -73,12 +79,12 @@
 
 <!-- Guidance -->
 <div>
+    <center>
     <h1>Reporting How-To</h1>
-    <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Learn more about what you can expect
       </button>
-    </p>
+        </center>
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
           <h5>In your own company</h5> 
@@ -190,12 +196,14 @@
 
   <!-- FAQs -->
   <div>
-  <h1>FAQs</h1>
+      <center>
+          <h1>FAQs</h1>
+      </center>
   <div id="accordion">
     <div class="card">
       <div class="card-header" id="headingOne">
         <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" coo aria-controls="collapseOne">
              Are you storing any of my data?
           </button>
         </h5>
@@ -254,7 +262,10 @@
 
 <!-- Form -->
 <div>
-  <h1>Report Creator</h1>
+    <center>
+    <h1>Report Creator</h1>
+    </center>
+  
   <form>
       <div class="form-group">
           <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
@@ -334,7 +345,7 @@ function download(filename, text) {
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-4">Let's stay in touch!</h1>
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div class="col-md-10 col-lg-8 col-xl-8 mx-auto">
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
@@ -372,7 +383,7 @@ function download(filename, text) {
             <a href="#">Privacy Policy</a>
           </li>
         </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; CANARY 2019. All Rights Reserved.</p>
+        <copyright class="text-muted small mb-4 mb-lg-0">&copy; CANARY 2019. All Rights Reserved.</copyright>
       </div>
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">

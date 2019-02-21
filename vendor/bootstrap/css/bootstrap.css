@@ -2949,12 +2949,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #384E77;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: #F4EA9F;
   text-decoration: underline;
 }
 
@@ -4145,6 +4145,8 @@ input[type="button"].btn-block {
 }
 
 .navbar {
+    color: #384E77;
+    background-color: #384E77;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -6568,13 +6570,13 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #384E77 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #dae0e5 !important;
+  background-color: #384E77 !important;
 }
 
 .bg-dark {
@@ -10013,6 +10015,8 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: 992px !important;
   }
   .navbar {
+      color:#384E77;
+      background-color:#384E77;
     display: none;
   }
   .badge {
