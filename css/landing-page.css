@@ -132,6 +132,7 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+#accordion{background-color: #fff;color:black;cursor:pointer;padding-left:7%;padding-right:7%;width:100%;text-align:left;border:none;outline:none;transition: 0.4s;}.navbar{background-color: #384E77;overflow: hidden;cursor:default}.navbar a{font-family:Montserrat,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#F4EA9F;font-size:1.7rem;float:left}
 
 /*!
  * Start Bootstrap - New Age v5.0.0 (https://startbootstrap.com/template-overviews/new-age)
