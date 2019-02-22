@@ -7,7 +7,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -32,14 +32,28 @@
 
   <!-- Navigation  -->
   <nav class="navbar static-top">
-    <div class="container">
-      <canary class="navbar-brand" href="#">CANARY</canary>
-      <canary class="navbar-brand" href="#">About</canary>
-        <canary class="navbar-brand" href="#">How To</canary>
-        <canary class="navbar-brand" href="#">FAQ</canary>
-        <canary class="navbar-brand" href="#">Report</canary>
-      <canary class="navbar-brand" href="#">Report</canary>
-    </div>
+		<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+			<a href="#">CANARY</a>
+		</div>
+		<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+			<ul class="list-inline mb-2">
+				<li class="list-inline-item mr-3">
+					<a href="#about">About</a>
+				</li>
+				<li class="list-inline-item mr-3">
+					<a href="#howto">How To</a>
+				</li>
+				<li class="list-inline-item mr-3">
+					<a href="#faq">FAQ</a>
+				</li>
+				<li class="list-inline-item mr-3">
+					<a href="#report">Report</a>
+				</li>
+				<li class="list-inline-item mr-0">
+					<a href="#signup">Sign Up!</a>
+				</li>
+			</ul>	
+		</div>
   </nav>
 
  <!-- Masthead -->
@@ -57,10 +71,10 @@
 
 <!-- Introduction-->
 <section class="test-section">
-<div>
+	<div id='about'>
 <br>
     <center>
-    <h1 class= "ml-"> About</h1>
+    <h1> About</h1>
     </center>
   <p>We’re a technology company called Canary. We’re dedicated to preventing workplace harassment and building a safer world for us all.
     <br>
@@ -80,7 +94,7 @@
 </section>
 
 <!-- Guidance -->
-<div>
+<div id='howto'>
     <center>
     <h1>Reporting How-To</h1>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -216,7 +230,7 @@
 </div>
 
   <!-- FAQs -->
-  <div>
+  <div id='faq'>
       <center>
           <h1>FAQs</h1>
       </center>
@@ -282,7 +296,7 @@
 </div>
 
 <!-- Form -->
-<div>
+<div id='report'>
     <center>
     <h1>Report Creator</h1>
     </center>
@@ -360,26 +374,27 @@ function download(filename, text) {
 
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-4">Let's stay in touch!</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-8 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    <div id='signup'>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<h1 class="mb-4">Let's stay in touch!</h1>
+					</div>
+					<div class="col-md-10 col-lg-8 col-xl-8 mx-auto">
+						<form>
+							<div class="form-row">
+								<div class="col-12 col-md-9 mb-2 mb-md-0">
+									<input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+								</div>
+								<div class="col-12 col-md-3">
+									<button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
   </section>
 
   <!-- Footer -->

@@ -2,22 +2,4 @@
  * Start Bootstrap - Landing Page v5.0.3 (https://startbootstrap.com/template-overviews/landing-page)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */body{font-family:Montserrat, Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}
-canary,h1,h2,h3,h4,h5,h6{font-family:Monteserrat, Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700; color:#384E77} 
-form,h1,h2,h3,h4,p,ul{padding-left:7rem;padding-right:7rem}
-header.masthead{position:relative;background-color:#384E77;background-size:cover;padding-top:10rem;padding-bottom:10rem}header.masthead .overlay{position:absolute;background-color:#384E77;height:100%;width:100%;top:0;left:0;opacity:.3}header.masthead h1{font-size:2rem}@media (min-width:768px){header.masthead{padding-top:20rem;padding-bottom:21rem}header.masthead h1{padding-right:1rem;padding-left:1rem; font-size:4rem;color:#fff} canary{font-size: 5rem;color:#F4EA9F}}.showcase .showcase-text{padding:3rem}.showcase .showcase-img{min-height:30rem;background-size:cover}@media (min-width:768px){.showcase .showcase-text{padding:7rem}}.features-icons{padding-top:7rem;padding-bottom:7rem}.features-icons .features-icons-item{max-width:20rem}.features-icons .features-icons-item .features-icons-icon{height:7rem}.features-icons .features-icons-item .features-icons-icon i{font-size:4.5rem}.features-icons .features-icons-item:hover .features-icons-icon i{font-size:5rem}.testimonials{padding-top:7rem;padding-bottom:7rem}.testimonials .testimonial-item{max-width:18rem}.testimonials .testimonial-item img{max-width:12rem;-webkit-box-shadow:0 5px 5px 0 #adb5bd;box-shadow:0 5px 5px 0 #adb5bd}.call-to-action{position:relative;background-color:#384E77;background-size:cover;padding-top:7rem;padding-bottom:7rem}.call-to-action .overlay{position:absolute;background-color:#384E77;height:100%;width:100%;top:0;left:0;opacity:.3}.call-to-action h1{color:#fff}.call-to-action canary{color:#F4EA9F}footer.footer{padding-top:4rem;padding-bottom:4rem}
-
-#accordion {
-  background-color: #fff;
-  color: black;
-  cursor: pointer;
-  padding-left: 7rem;
-    padding-right: 7rem;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.navbar{}
+ */body{font-family:Montserrat,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}canary,h1,h2,h3,h4,h5,h6{font-family:Monteserrat,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700; color:#384E77}h1{font-size:3.5rem}form,h2,h3,h4,p,ul{padding-left:7%;padding-right:7%}header.masthead{position:relative;background-color:#384E77;background-size:cover;padding-top:10rem;padding-bottom:10rem}header.masthead .overlay{position:absolute;background-color:#384E77;height:100%;width:100%;top:0;left:0;opacity:.3}@media (min-width:768px){header.masthead{padding-top:20rem;padding-bottom:21rem}header.masthead h1{padding-right:1rem;padding-left:1rem; font-size:390%;color:#fff} canary{font-size: 80px;color:#F4EA9F;text-decoration:underline}.showcase .showcase-text{padding:3rem}.showcase .showcase-img{min-height:30rem;background-size:cover}@media (min-width:768px){.showcase .showcase-text{padding:7rem}}.features-icons{padding-top:7rem;padding-bottom:7rem}.features-icons .features-icons-item{max-width:20rem}.features-icons .features-icons-item .features-icons-icon{height:7rem}.features-icons .features-icons-item .features-icons-icon i{font-size:4.5rem}.features-icons .features-icons-item:hover .features-icons-icon i{font-size:5rem}.testimonials{padding-top:7rem;padding-bottom:7rem}.testimonials .testimonial-item{max-width:18rem}.testimonials .testimonial-item img{max-width:12rem;-webkit-box-shadow:0 5px 5px 0 #adb5bd;box-shadow:0 5px 5px 0 #adb5bd}.call-to-action{position:relative;background-color:#384E77;background-size:cover;padding-top:18rem;padding-bottom:18rem}.call-to-action .overlay{position:absolute;background-color:#384E77;height:100%;width:100%;top:0;left:0;opacity:.3}.call-to-action h1{color:#fff;font-size:350%}.call-to-action canary{color:#F4EA9F;text-decoration:none}footer.footer{padding-top:2rem;padding-bottom:2rem}#accordion{background-color: #fff;color:black;cursor:pointer;padding-left:7%;padding-right:7%;width:100%;text-align:left;border:none;outline:none;transition: 0.4s;}.navbar{background-color: #384E77;overflow: hidden;cursor:default}.navbar a{font-family:Montserrat,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#F4EA9F;font-size:1.7rem;float:left}
