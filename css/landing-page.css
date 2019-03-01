@@ -50,15 +50,15 @@ ul {
 
 header.masthead {
   position: relative;
-  background-color: #384E77;
+  background-color: #006989;
   background-size: cover;
-  padding-top: 1000%;
-  padding-bottom: 1000%;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #384E77;
+  background-color: #006989;
   height: 100%;
   width: 100%;
   top: 0;
@@ -67,23 +67,24 @@ header.masthead .overlay {
 }
 
 header.masthead h1 {
-  font-size: 200%;
+  font-size: 390%;
+  padding-top: 0%;
 }
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 20rem;
-    padding-bottom: 21rem;
+    padding-top: 25%;
+    padding-bottom: 25%;
   }
   header.masthead h1 {
-    font-size: 3rem;
-    padding-right:1rem;
-    padding-left:1rem;
     font-size: 390%;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top: 0%;
     color: #fff;
   }
   canary {
-    font-size: 80px;
+    font-size: 120%;
     color: #F4EA9F;
     text-decoration: underline;
   }
@@ -223,15 +224,15 @@ header.masthead h1 {
 
 .call-to-action {
   position: relative;
-  background-color: #384E77;
+  background-color: #006989;
   background-size: cover;
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 23%;
+  padding-bottom: 23%;
 }
 
 .call-to-action .overlay {
   position: absolute;
-  background-color: #384E77;
+  background-color: #006989;
   height: 100%;
   width: 100%;
   top: 0;
@@ -242,6 +243,7 @@ header.masthead h1 {
 .call-to-action h1 {
   color: #fff;
   font-size: 350%;
+  padding-top: 0%;
 }
 
 .call-to-action canary{
