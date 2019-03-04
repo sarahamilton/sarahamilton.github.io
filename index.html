@@ -323,13 +323,17 @@
   </section>
 
 <!-- Form -->
-  <section class="Form">
-    <div id='report'>
-      <center>
-        <h1>Report Creator</h1>
-      </center>
-
-    <form>
+<div>
+    <center>
+    <h1>Report Creator</h1>
+    </center>
+  
+  <form id = "report">
+      <input type="text" name="foo">
+      <div class="form-group">
+          <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
+          <textarea class="form-control" id="report-val" rows="1"></textarea>
+        </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
             <textarea class="form-control" id="report-val" rows="1"></textarea>
@@ -392,8 +396,8 @@ function download(filename, text) {
   document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
 
-    var text = document.getElementById("report-val").value;
-    var filename = "report.txt";§
+    var text = "Here is your report: " + document.getElementById("report").elements["foo"]
+    var filename = "report.txt";
     
     download(filename, text);
 }, false);
@@ -416,58 +420,8 @@ function download(filename, text) {
             </h5>
           </div>
 
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                No, we are not collecting any data from this process.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Can you submit my report for me?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                No, we cannot submit any reports on your behalf. When you have the PDF, you can file it with your employer, if you wish  
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How do I know if I experienced “inappropriate behavior”?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-                You do not have to know for sure if you experienced inappropriate behavior -- we’re here to talk anyways. For more information on the legal definitions and processes, see our guide above.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Where can I go for further help?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="card-body">
-                  The <a href="http://thesurvivorstrust.org/">Survivor's Trust</a> or <a href="https://www.hestia.org/">Hestia</a> are great resources for counseling. <br><a href=">https://www.citizensadvice.org.uk/">Citizens Advice</a> or <a href="http://www.acas.org.uk/index.aspx?articleid=6078">Acas</a> can help with questions about your rights.  
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  
+<!-- Preview - TBD -->
+
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
