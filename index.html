@@ -296,12 +296,13 @@
 </div>
 
 <!-- Form -->
-<div id='report'>
+<div>
     <center>
     <h1>Report Creator</h1>
     </center>
   
-  <form>
+  <form id = "report">
+      <input type="text" name="foo">
       <div class="form-group">
           <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
           <textarea class="form-control" id="report-val" rows="1"></textarea>
@@ -363,14 +364,14 @@ function download(filename, text) {
   document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
 
-    var text = document.getElementById("report-val").value;
-    var filename = "report.txt";§
+    var text = "Here is your report: " + document.getElementById("report").elements["foo"]
+    var filename = "report.txt";
     
     download(filename, text);
 }, false);
 </script>
 
-  <!-- Preview - TBD -->
+<!-- Preview - TBD -->
 
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
