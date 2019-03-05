@@ -367,7 +367,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">I certify that all declarations are truthful</label>
               </div> <br>   
-        <button type="submit" class="btn btn-primary" onclick="download('hello.txt','myForm')">Download File</button>
+        <button type="submit" class="btn btn-primary" onclick="download('Canary_Report.pdf,'myForm')">Download File</button>
       </form>
       <p></p>
     </div>
@@ -386,16 +386,12 @@
             text = text + "\n \n" + item;
             }
 
-        var element = document.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-        element.setAttribute('download', filename);
+          // jsPDF
+          var doc = new jsPDF()
 
-        element.style.display = 'none';
-        document.body.appendChild(element);
-
-        element.click();
-
-        document.body.removeChild(element);
+          doc.text(text, 10, 10)
+          doc.save(filename)
+          }
     }
      
 </script>
