@@ -329,7 +329,7 @@
         <h1>Report Creator</h1>
       </center>
 
-    <form>
+    <form id="myForm">
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Where were you when the incident took place? Being as specific as possible is helpful!</label>
             <textarea class="form-control" id="report-val" rows="1"></textarea>
@@ -367,31 +367,36 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">I certify that all declarations are truthful</label>
               </div> <br>   
-        <button type="submit" class="btn btn-primary" id="dwn-btn">Download File</button>
+        <button type="submit" class="btn btn-primary" onclick="download('hello.txt','myForm')">Download File</button>
       </form>
       <p></p>
     </div>
   </section>
 
-<!-- TESTING Javascript-->
-<script>
-function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
-    element.style.display = 'none';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-}
-// Start file download.
-  document.getElementById("dwn-btn").addEventListener("click", function(){
-    // Generate download of hello.txt file with some content
-    var text = document.getElementById("report-val").value;
-    var filename = "report.txt";§
-    
-    download(filename, text);
-}, false);
+<!-- NEW Javascript-->
+<script> 
+    function download(filename, form_id) {
+
+        var form_len = document.getElementById(form_id).elements.length;
+        var text = "Report";
+           
+        for (i=0; i<form_len; i++){
+            var item = document.getElementById(form_id).elements[i].value;
+            text = text + "\n \n" + item;
+            }
+
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    }
+     
 </script>
   
 <!-- FAQs -->
